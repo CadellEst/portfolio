@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadell Estephane</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f3830dc50a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" 
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+       emailjs.init({
+        publicKey: "j6YiauHnvWaUFewP7",
+       });
+    })();
+    </script>
+  </head>
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img
+            id="personal-logo"
+            src="./assets/CElogo.jpeg"
+            alt=""
+          />
+        </figure>
+        <ul class="nav__link--list" >
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="
+              nav__link--anchor 
+              link__hover-effect 
+              link__hover-effect--black
+              ">About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor 
+              link__hover-effect 
+              link__hover-effect--black
+              ">Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor 
+              link__hover-effect 
+              link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor 
+              link__hover-effect 
+              link__hover-effect--black"
+              ><i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hello</h1>
+          <h1 class="title title__secondary">My name is <span class="blue">Cadell</span></h1>
+          <p class="header__para">
+            I'm a <b class="blue">Frontent Software Engineer</b>
+            <br />
+            Here is a little more <b class="blue click" onclick="toggleModal()">information</b> on me.
+          </p>
+          <div class="social__list">
+            <div>
+              <a
+                href="https://github.com/CadellEst"
+                target="_blank"
+                class="social__link click"
+              >
+                <i class="fa-brands fa-github-alt"></i>
+                
+              </a>
+              <b class="blue ">Github</b>
+            </div>
+            
+            <div>
+              <a href="" class="social__link click">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <b class="blue">LinkedIn</b>
+            </div>
+            
+          </div>
+        </div>
+      </header>
+    <a href="#">
+      <button class="mail_btn click" onclick="toggleModal()">
+        <i class="fa-regular fa-envelope"></i>
+      </button>
+    </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title">
+           Cover letter.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Developer</h4>
+          <p class="modal__para">
+            I'm a software engineer
+            <br>
+            Below are frameworks I have experience with.
+            I am continously learning daily
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png?20110131171049" alt="">
+            <span class="language__name">HTML5</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png?20210705212817" alt="">
+            <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png?20141107110902" alt="">
+            <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+            <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/120px-Node.js_logo.svg.png" alt="">
+            <span class="language__name">Node Js</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="	https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/180px-Nextjs-logo.svg.png"alt="">
+            <span class="language__name">Next Js</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/180px-Vue.js_Logo_2.svg.png" alt="">
+            <span class="language__name">Vue Js</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https:////upload.wikimedia.org/wikipedia/commons/thumb/9/95/Tailwind_CSS_logo.svg/300px-Tailwind_CSS_logo.svg.png" alt="">
+            <span class="language__name">TailwindCSS</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">
+            Let's have a chat!
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm open to a new career path.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <lable class="form__item--lable">Name</lable>
+              <input type="text" name="user_name" class="input" required></input>  
+            </div>
+            <div class="form__item">
+              <lable class="form__item--lable">Email</lable>
+              <input type="text" name="user_email" class="input" required></input>   
+            </div>
+            <div class="form__item">
+              <lable class="form__item--lable">Message</lable>
+              <textarea type="text" name="message" class="input" required></textarea>  
+            </div>
+            <button id="contact__submit" class="form__submit">
+              send it my way!
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fa-solid fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">Thanks for the message 
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0">
+      <img src="./assets/circle.svg" class="shape shape--1">
+      <img src="./assets/squiggly.svg" class="shape shape--2">
+      <img src="./assets/circle.svg" class="shape shape--3">
+      <img src="./assets/triangle.svg" class="shape shape--4">
+      <img src="./assets/circle.svg" class="shape shape--5">
+      <img src="./assets/squiggly.svg" class="shape shape--6">
+      <img src="./assets/circle.svg" class="shape shape--7">
+      <img src="./assets/semi circle.svg" class="shape shape--8">
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="blue">projects</span>.
+          </h1>
+          <ul class="project__list">
+
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/youtubeClone.png"
+                  class="project__img"
+                  alt=""
+                  href=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Youtube Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    JavaScript, Vite, CSS
+                  </h4>
+                  <p class="project__description--para">Youtube clone connected to youtube API</p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/CadellEst/youtube-clone" class="project__description--link">
+                      <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                    <a href="https://youtube-clone-blue-ten.vercel.app/" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br />
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/netflixClone.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Netflix Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    React, TailwindCSS, Vite, Nextjs
+                  </h4>
+                  <p class="project__description--para">Interactive Netflix clone with sign in and video page.</p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/CadellEst/netflix-clone" class="project__description--link">
+                      <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                    <a href="https://netflix-clone-silk-six.vercel.app/" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br/>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/spotifyClone.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Spotify Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    React, TailwindCSS, , Nextjs
+                  </h4>
+                  <p class="project__description--para">Spotify clone wit sign in, upload and player options.</p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/CadellEst/spotify-clone" class="project__description--link">
+                      <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                    <a href="https://spotify-clone-eight-coral.vercel.app/" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br/>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/twitterClone.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Twitter Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript, React
+                  </h4>
+                  <p class="project__description--para">Twitter clone with sign up, comment, reply and like features.</p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/CadellEst/twitter-clone-fes" class="project__description--link">
+                      <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                    <a href="https://twitter-clone-fes-delta.vercel.app/" class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img class="footer__logo--img" src="./assets/CElogo.jpeg" alt="" />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/CadellEst"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Github
+            </a>
+            <a
+              href="https://www.linkedin.com/in/cadell-estephane-5782bb1a6/"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="#" onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+
+          </div>
+          <div class="footer__copyright">Cadell Estephane</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
