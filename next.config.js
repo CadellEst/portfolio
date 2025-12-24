@@ -8,6 +8,21 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.cadellestephane.co.uk',
+          },
+        ],
+        destination: 'https://cadellestephane.co.uk/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
