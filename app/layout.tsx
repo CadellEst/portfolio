@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "Cadell Estephane | Frontend Engineer",
   description:
     "Luxury-grade portfolio for Cadell Estephane - frontend engineer crafting performant, SEO-first experiences with Next.js, TypeScript, and Tailwind.",
+  metadataBase: new URL("https://cadellestephane.co.uk"),
   keywords: [
     "Cadell Estephane",
     "frontend engineer",
