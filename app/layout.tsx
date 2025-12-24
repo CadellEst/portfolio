@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Space_Grotesk, Playfair_Display } from "next/font/google";
-
-const sans = Space_Grotesk({ subsets: ["latin"], variable: "--font-sans" });
-const display = Playfair_Display({ subsets: ["latin"], variable: "--font-display" });
 
 export const metadata: Metadata = {
   title: "Cadell Estephane | Frontend Engineer",
@@ -48,7 +44,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${sans.variable} ${display.variable}`} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className="bg-obsidian text-champagne antialiased">{children}</body>
     </html>
   );
