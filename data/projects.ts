@@ -18,7 +18,7 @@ export const projects: Project[] = [
       "Custom Next.js build that curates the channel's latest drops and streamlines applications from new talent, lifting inbound conversions and session times.",
     liveUrl: "https://musicmilitia.co.uk/",
     stack: ["Next.js", "TypeScript", "Tailwind", "Keen Slider", "Axios"],
-    image: "https://image.thum.io/get/width/1600/crop/1200/noanimate/https://musicmilitia.co.uk/",
+    image: "/assets/musicmilitia.png",
     fallbackImage: "/assets/musicmilitia.png",
     highlight: "+30% lift in qualified submissions",
   },
