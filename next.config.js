@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    // Use source images directly so screenshots work on static hosting too
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
