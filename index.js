@@ -60,7 +60,7 @@ function contact(event) {
         }).catch(() => {
             loading.classList.remove("modal__overlay--visible");
             alert(
-                "The email service is temporarily is unavailable. Please contact me directly at 'CadellEstephane@gmail.com"
+                "The email service is temporarily is unavailable. Please contact me directly at 'cewebenterprise@gmail.com"
             );
         })
 }

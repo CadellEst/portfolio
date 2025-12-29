@@ -169,7 +169,7 @@ export default function Page() {
                     Download CV
                   </Link>
                   <Link
-                    href="mailto:CadellEstephane@gmail.com?subject=Project%20for%20Cadell"
+                    href="mailto:cewebenterprise@gmail.com?subject=Project%20for%20Cadell"
                     className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-champagne transition hover:border-gold"
                   >
                     Book a call
@@ -275,7 +275,7 @@ export default function Page() {
                 </div>
                 <div className="flex flex-col gap-3">
                   <Link
-                    href="mailto:CadellEstephane@gmail.com?subject=Let%27s%20work%20together"
+                    href="mailto:cewebenterprise@gmail.com?subject=Let%27s%20work%20together"
                     className="button-cta inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-ink"
                   >
                     Email Cadell
